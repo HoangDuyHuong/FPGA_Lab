@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FPGA Calculator - AISeQ Lab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --bg-card: #0b1220;
+            --accent: #38bdf8;
+            --accent-soft: rgba(56,189,248,0.12);
+            --border-soft: rgba(148,163,184,0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top, #0f172a, #020617 55%),
+                radial-gradient(circle at bottom, #1e293b, #020617 70%);
+            color: #e5e7eb;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 12px;
+        }
+
+        .calc-card {
+            width: 100%;
+            max-width: 920px;
+            border-radius: 20px;
+            padding: 24px 26px;
+            background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.9));
+            box-shadow:
+                0 24px 60px rgba(15,23,42,0.85),
+                0 0 0 1px rgba(148,163,184,0.25);
+        }
+
+        @media (min-width: 768px) {
+            .calc-layout {
+                display: flex;
+                gap: 24px;
+            }
+        }
+
+        .calc-info {
+            flex: 1 1 260px;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+        }
+
+        @media (min-width: 768px) {
+            .calc-info {
+                border-bottom: 0;
+                border-right: 1px solid var(--border-soft);
+                padding-bottom: 0;
+                margin-bottom: 0;
+                padding-right: 20px;
+            }
+        }
+
+        .calc-form {
+            flex: 1 1 280px;
+        }
+
+        .logo-box {
+            display: inline-flex;              /* chỉ rộng bằng nội dung */
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 16px;               /* căn giữa trong cột trái */
+
+            padding: 8px 14px;                 /* thu nhỏ khung */
+            background: #020617;
+            border-radius: 18px;
+            box-shadow:
+                0 0 0 1px rgba(148,163,184,0.45),
+                0 10px 24px rgba(15,23,42,0.9);
+        }
+
+        .logo-box img {
+            max-height: 160px;   /* logo to hơn chút */
+            width: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+            background: transparent;
+            padding: 0;
+            user-select: none;
+        }
+
+
+
+        .badge-subtitle {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(15,23,42,0.8);
+            border: 1px solid rgba(148,163,184,0.45);
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 999px;
+            background: #22c55e;
+            box-shadow: 0 0 8px #22c55e;
+        }
+
+        h1.title {
+            font-size: 1.7rem;
+            margin: 10px 0 6px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        .mini-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+            font-size: 0.78rem;
+        }
+
+        .mini-spec {
+            padding: 5px 9px;
+            border-radius: 999px;
+            background: rgba(15,23,42,0.9);
+            border: 1px solid rgba(75,85,99,0.7);
+            color: #cbd5f5;
+        }
+
+        /* Form */
+        .form-label {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #9ca3af;
+        }
+
+        .form-control,
+        .form-select {
+            background-color: rgba(15,23,42,0.8);
+            border-radius: 12px;
+            border: 1px solid rgba(148,163,184,0.6);
+            color: #e5e7eb;
+            font-size: 0.95rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: rgba(15,23,42,0.95);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px rgba(56,189,248,0.4);
+            color: #e5e7eb;
+        }
+
+        .btn-calc {
+            width: 100%;
+            font-size: 1rem;
+            padding: 11px;
+            border-radius: 999px;
+            border: none;
+            font-weight: 600;
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+            color: #0b1120;
+            box-shadow: 0 12px 30px rgba(56,189,248,0.4);
+        }
+
+        .btn-calc:hover {
+            filter: brightness(1.06);
+        }
+
+        .btn-clear {
+            width: 100%;
+            font-size: 0.9rem;
+            padding: 9px;
+            margin-top: 8px;
+            border-radius: 999px;
+            border: 1px solid rgba(148,163,184,0.6);
+            background: rgba(15,23,42,0.9);
+            color: #cbd5f5;
+        }
+
+        .result-box {
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 12px;
+            margin-top: 18px;
+            border-radius: 14px;
+            background: var(--accent-soft);
+            border: 1px solid rgba(56,189,248,0.45);
+            color: #e0f2fe;
+            display: none;
+        }
+
+        .result-box.error {
+            background: rgba(248,113,113,0.14);
+            border-color: rgba(248,113,113,0.8);
+            color: #fecaca;
+        }
+
+        /* LED Panel */
+        .led-wrapper {
+            margin-top: 18px;
+            padding: 12px 14px;
+            border-radius: 14px;
+            background: radial-gradient(circle at top, #020617, #020617);
+            border: 1px solid rgba(31,41,55,0.9);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
+        }
+
+        .led-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .led-header span {
+            font-size: 0.78rem;
+            color: #9ca3af;
+        }
+
+        .led-panel {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 4px;
+        }
+
+        .led {
+            width: 16px;
+            height: 28px;
+            border-radius: 6px;
+            background: #111827;
+            border: 2px solid #020617;
+            transition: 0.16s;
+        }
+
+        .led.on {
+            background: #facc15;
+            border-color: #fde68a;
+            box-shadow:
+                0 0 16px rgba(250,204,21,0.95),
+                0 0 2px #fbbf24;
+        }
+
+        .led-label {
+            text-align: center;
+            font-size: 0.7rem;
+            margin-top: 3px;
+            color: #6b7280;
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            font-size: 0.75rem;
+            color: #6b7280;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="calc-card">
+
+        <div class="calc-layout">
+            <!-- Info / Branding -->
+            <div class="calc-info">
+                <div class="logo-box">
+                    <img src="logo.jpg" alt="Lab logo">
+                </div>
+
+                <div class="text-center text-md-start">
+                    <div class="badge-subtitle">
+                        <span class="badge-dot"></span>
+                        <span>FPGA-based ALU Demo</span>
+                    </div>
+
+                    <h1 class="title">Tiny Custom CPU</h1>
+                    <p class="subtitle mb-0">
+                        Thử các phép toán ALU và quan sát kết quả dạng số &amp; LED 8-bit,
+                        mô phỏng output trên kit FPGA.
+                    </p>
+
+                    <div class="mini-specs">
+                        <div class="mini-spec">8-bit result LEDs</div>
+                        <div class="mini-spec">16-bit internal value</div>
+                        <div class="mini-spec">ADD / SUB / MUL / LOGIC</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form / Controls -->
+            <div class="calc-form">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label class="form-label fw-semibold">Opcode</label>
+                        <select id="op" class="form-select">
+                            <option value="1">ADD  (A + B)</option>
+                            <option value="2">SUB  (A - B)</option>
+                            <option value="3">MUL  (A × B)</option>
+                            <option value="4">AND (A &amp; B)</option>
+                            <option value="5">OR  (A | B)</option>
+                            <option value="6">NOT (¬A)</option>
+                            <option value="7">XOR (A ⊕ B)</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">A</label>
+                        <input id="a" type="text" class="form-control" placeholder="Enter value…">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">B</label>
+                        <input id="b" type="text" class="form-control" placeholder="Enter value…">
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-calc" onclick="run()">Compute</button>
+                        <button class="btn btn-clear" onclick="clearAll()">Clear</button>
+                    </div>
+                </div>
+
+                <div id="output" class="result-box"></div>
+
+                <!-- LED panel -->
+                <div id="ledPanelWrapper" class="led-wrapper">
+                    <div class="led-header">
+                        <span>LED Output (7..0)</span>
+                        <span>MSB → LSB</span>
+                    </div>
+                    <div id="ledPanel" class="led-panel">
+                        <div class="text-center">
+                            <div class="led" id="led7"></div>
+                            <div class="led-label">7</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led6"></div>
+                            <div class="led-label">6</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led5"></div>
+                            <div class="led-label">5</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led4"></div>
+                            <div class="led-label">4</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led3"></div>
+                            <div class="led-label">3</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led2"></div>
+                            <div class="led-label">2</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led1"></div>
+                            <div class="led-label">1</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="led" id="led0"></div>
+                            <div class="led-label">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-note">
+                    AISeQ Lab • UTE — Tiny Custom CPU Demo
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function updateLEDs(binary16) {
+    // show LED wrapper
+    document.getElementById("ledPanelWrapper");
+
+    const top8 = binary16.substring(0, 8);
+
+    for (let i = 0; i < 8; i++) {
+        const led = document.getElementById("led" + (7 - i));
+        if (top8[i] === "1") led.classList.add("on");
+        else led.classList.remove("on");
+    }
+}
+
+function run() {
+    fetch("/calc", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            opcode: Number(document.getElementById("op").value),
+            a: document.getElementById("a").value,
+            b: document.getElementById("b").value
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        const out = document.getElementById("output");
+
+        if (data.error) {
+            out.style.display = "block";
+            out.classList.add("error");
+            out.innerText = "ERROR";
+        } else {
+            out.style.display = "block";
+            out.classList.remove("error");
+
+            const num = data.result.split("\n")[0];
+            out.innerText = num;
+
+            const match = data.result.match(/([01]{16})/);
+            if (match) updateLEDs(match[1]);
+        }
+    });
+}
+
+function clearAll() {
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    const out = document.getElementById("output");
+    out.style.display = "none";
+    out.classList.remove("error");
+
+
+    for (let i = 0; i < 8; i++) {
+        document.getElementById("led" + i).classList.remove("on");
+    }
+}
+</script>
+
+</body>
+</html>
