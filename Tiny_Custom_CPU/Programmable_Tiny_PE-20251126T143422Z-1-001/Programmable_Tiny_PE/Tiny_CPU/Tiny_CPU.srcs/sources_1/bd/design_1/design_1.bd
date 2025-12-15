@@ -1,0 +1,190 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x41A0CFFE843D5B31",
+      "device": "xczu9eg-ffvb1156-2-e",
+      "gen_directory": "../../../../Tiny_CPU.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.2.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "rst_clk_wiz_0_25M": "",
+      "Tiny_CPU_IP_0": ""
+    },
+    "interface_ports": {
+      "user_si570_sysclk": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "300000000"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "user_si570_sysclk_clk_n",
+            "direction": "I"
+          },
+          "CLK_P": {
+            "physical_name": "user_si570_sysclk_clk_p",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "LED_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "Tx_out_0": {
+        "direction": "O"
+      },
+      "Rx_in_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "33.330000000000005"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "241.628"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "226.541"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "user_si570_sysclk"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "44.375"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "3.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "44.375"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "12"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "rst_clk_wiz_0_25M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_rst_clk_wiz_0_25M_0",
+        "xci_path": "ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_0_25M",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "Tiny_CPU_IP_0": {
+        "vlnv": "comparch:user:Tiny_CPU_IP:1.0",
+        "xci_name": "design_1_Tiny_CPU_IP_0_0",
+        "xci_path": "ip/design_1_Tiny_CPU_IP_0_0/design_1_Tiny_CPU_IP_0_0.xci",
+        "inst_hier_path": "Tiny_CPU_IP_0"
+      }
+    },
+    "interface_nets": {
+      "user_si570_sysclk_1": {
+        "interface_ports": [
+          "user_si570_sysclk",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "Rx_in_0_1": {
+        "ports": [
+          "Rx_in_0",
+          "Tiny_CPU_IP_0/Rx_in"
+        ]
+      },
+      "Tiny_CPU_IP_0_LED_out": {
+        "ports": [
+          "Tiny_CPU_IP_0/LED_out",
+          "LED_out_0"
+        ]
+      },
+      "Tiny_CPU_IP_0_Tx_out": {
+        "ports": [
+          "Tiny_CPU_IP_0/Tx_out",
+          "Tx_out_0"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "rst_clk_wiz_0_25M/slowest_sync_clk",
+          "Tiny_CPU_IP_0/CLK"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "rst_clk_wiz_0_25M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_0_25M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_0_25M/peripheral_aresetn",
+          "Tiny_CPU_IP_0/RST"
+        ]
+      }
+    }
+  }
+}

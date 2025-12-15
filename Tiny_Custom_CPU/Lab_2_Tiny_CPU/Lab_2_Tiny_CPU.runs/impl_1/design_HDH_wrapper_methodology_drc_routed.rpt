@@ -1,0 +1,275 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Nov 30 10:33:52 2025
+| Host         : HUONG running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_HDH_wrapper_methodology_drc_routed.rpt -pb design_HDH_wrapper_methodology_drc_routed.pb -rpx design_HDH_wrapper_methodology_drc_routed.rpx
+| Design       : design_HDH_wrapper
+| Device       : xczu9eg-ffvb1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 48
++--------+----------+---------------------------+------------+
+| Rule   | Severity | Description               | Violations |
++--------+----------+---------------------------+------------+
+| DPIR-2 | Warning  | Asynchronous driver check | 48         |
++--------+----------+---------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-2#1 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#2 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#3 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#4 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#5 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#6 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#7 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#8 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#9 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#10 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#11 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#12 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#13 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#14 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#15 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#16 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#17 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#18 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#19 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#20 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#21 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#22 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#23 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#24 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#25 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#26 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#27 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#28 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#29 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#30 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#31 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#32 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#33 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#34 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#35 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#36 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#37 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#38 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#39 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#40 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#41 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#42 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#43 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#44 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#45 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#46 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#47 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#48 Warning
+Asynchronous driver check  
+DSP design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w input pin design_HDH_i/Add_IP_HDH_0/inst/core/alu/MUL_raw_w/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+

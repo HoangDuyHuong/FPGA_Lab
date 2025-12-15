@@ -1,0 +1,220 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x41A0CFFED223E30A",
+      "device": "xczu9eg-ffvb1156-2-e",
+      "gen_directory": "../../../../Lab_2_Tiny_CPU.gen/sources_1/bd/design_HDH",
+      "name": "design_HDH",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Add_IP_HDH_0": "",
+      "clk_wiz_0": "",
+      "rst_clk_wiz_0_25M": ""
+    },
+    "interface_ports": {
+      "user_si570_sysclk": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "300000000"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "user_si570_sysclk_clk_n",
+            "direction": "I"
+          },
+          "CLK_P": {
+            "physical_name": "user_si570_sysclk_clk_p",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Tx_out_0": {
+        "direction": "O"
+      },
+      "LED_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "Rx_in_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Add_IP_HDH_0": {
+        "vlnv": "xilinx.com:user:Add_IP_HDH:1.0",
+        "xci_name": "design_HDH_Add_IP_HDH_0_0",
+        "xci_path": "ip\\design_HDH_Add_IP_HDH_0_0\\design_HDH_Add_IP_HDH_0_0.xci",
+        "inst_hier_path": "Add_IP_HDH_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_HDH_clk_wiz_0_0",
+        "xci_path": "ip\\design_HDH_clk_wiz_0_0\\design_HDH_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "33.330000000000005"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "166.323"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "107.936"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "user_si570_sysclk"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "5"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "3.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "30"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "AUTO"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "2"
+          },
+          "PRIMITIVE": {
+            "value": "PLL"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "rst_clk_wiz_0_25M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_HDH_rst_clk_wiz_0_25M_0",
+        "xci_path": "ip\\design_HDH_rst_clk_wiz_0_25M_0\\design_HDH_rst_clk_wiz_0_25M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_0_25M",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "user_si570_sysclk_1": {
+        "interface_ports": [
+          "user_si570_sysclk",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "Add_IP_HDH_0_LED_out": {
+        "ports": [
+          "Add_IP_HDH_0/LED_out",
+          "LED_out_0"
+        ]
+      },
+      "Add_IP_HDH_0_Tx_out": {
+        "ports": [
+          "Add_IP_HDH_0/Tx_out",
+          "Tx_out_0"
+        ]
+      },
+      "Rx_in_0_1": {
+        "ports": [
+          "Rx_in_0",
+          "Add_IP_HDH_0/Rx_in"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "Add_IP_HDH_0/CLK",
+          "rst_clk_wiz_0_25M/slowest_sync_clk"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "rst_clk_wiz_0_25M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_0_25M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_0_25M/peripheral_aresetn",
+          "Add_IP_HDH_0/RST"
+        ]
+      }
+    }
+  }
+}

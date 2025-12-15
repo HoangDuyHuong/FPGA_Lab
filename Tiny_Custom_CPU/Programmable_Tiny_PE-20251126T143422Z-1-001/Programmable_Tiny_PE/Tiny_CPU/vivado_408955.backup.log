@@ -1,0 +1,237 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Wed Nov 19 17:56:50 2025
+# Process ID: 408955
+# Current directory: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU
+# Command line: vivado -stack 10000 Tiny_CPU.xpr
+# Log file: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/vivado.log
+# Journal file: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/vivado.jou
+# Running On: cad115, OS: Linux, CPU Frequency: 1199.962 MHz, CPU Physical cores: 14, Host memory: 269918 MB
+#-----------------------------------------------------------
+start_gui
+Sourcing tcl script '/home/hoailuan/.Xilinx/Vivado/Vivado_init.tcl'
+WARNING: [Board 49-91] Board repository path '/home/hoailuan/Research/2023/FPGA/TySOM-3A-ZU19EG/Vivado-board_files/2020.2/TySOM-3A-ZU19EG/1.1' does not exist, it will not be used to search board files.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project Tiny_CPU.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/ADD_SUB_Sharing.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/ALU.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/Controller.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/Core.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/Input_Memory.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/Instruction_Memory.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/receiver.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/transmitter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/RTL/Add_IP.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 9502.320 ; gain = 147.500 ; free physical = 52624 ; free virtual = 236747
+update_compile_order -fileset sources_1
+open_bd_design {/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_25M
+Adding component instance block -- comparch:user:Tiny_CPU_IP:1.0 - Tiny_CPU_IP_0
+Successfully read diagram <design_1> from block design file </home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 52540 ; free virtual = 236664
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xczu9eg-ffvb1156-2-e
+Top: design_1_wrapper
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'first_send_1_w', assumed default net type 'wire' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:70]
+INFO: [Synth 8-11241] undeclared symbol 'MLSB_SEL_Tx_Byte_out_w', assumed default net type 'wire' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:62]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 51425 ; free virtual = 235549
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_Tiny_CPU_IP_0_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_Tiny_CPU_IP_0_0/synth/design_1_Tiny_CPU_IP_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Add_IP' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Add_IP.v:10]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/receiver.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/receiver.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Core' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:10]
+INFO: [Synth 8-226] default block is never used [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Instruction_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Instruction_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Input_Memory' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Input_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Input_Memory' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Input_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ADD_SUB_Sharing' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ADD_SUB_Sharing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ADD_SUB_Sharing' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ADD_SUB_Sharing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:10]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/transmitter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/transmitter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'Add_IP' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Add_IP.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Tiny_CPU_IP_0_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_Tiny_CPU_IP_0_0/synth/design_1_Tiny_CPU_IP_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71342]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71342]
+INFO: [Synth 8-6157] synthesizing module 'MMCME4_ADV' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:80245]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 44.375000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 3.333000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 44.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 12 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME4_ADV' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:80245]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:68]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_25M_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_25M_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_25M' of module 'design_1_rst_clk_wiz_0_25M_0' has 10 connections declared, but only 6 given [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 51516 ; free virtual = 235640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 51510 ; free virtual = 235635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 51510 ; free virtual = 235635
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 11204.098 ; gain = 0.000 ; free physical = 51487 ; free virtual = 235612
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Fixed_Point_Adder/Simulation/Simulation.srcs/constrs_1/new/ct.xdc]
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Fixed_Point_Adder/Simulation/Simulation.srcs/constrs_1/new/ct.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11981.824 ; gain = 0.000 ; free physical = 51445 ; free virtual = 235570
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  FDR => FDRE: 12 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 12166.324 ; gain = 962.227 ; free physical = 51078 ; free virtual = 235202
+72 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 12166.324 ; gain = 962.227 ; free physical = 51078 ; free virtual = 235202
+open_bd_design {/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/sources_1/bd/design_1/design_1.bd}
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 12444.305 ; gain = 0.000 ; free physical = 8816 ; free virtual = 228435
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 13211.371 ; gain = 2.969 ; free physical = 8511 ; free virtual = 228130
+Restored from archive | CPU: 0.120000 secs | Memory: 0.461655 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 13211.371 ; gain = 2.969 ; free physical = 8511 ; free virtual = 228130
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 13595.035 ; gain = 0.000 ; free physical = 8105 ; free virtual = 227724
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 14636.461 ; gain = 2192.156 ; free physical = 7879 ; free virtual = 227499

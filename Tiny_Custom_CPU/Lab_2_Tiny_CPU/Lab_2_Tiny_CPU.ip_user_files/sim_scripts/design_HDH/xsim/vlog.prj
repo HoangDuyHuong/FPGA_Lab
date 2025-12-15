@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "../../../../Lab_2_Tiny_CPU.gen/sources_1/bd/design_HDH/ipshared/7698" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/ADD_SUB_Sharing.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/ALU.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/Controller.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/Core.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/Input_Memory.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/Instruction_Memory.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/receiver.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/transmitter.v" \
+"../../../bd/design_HDH/ipshared/9a2f/BASIC_IC_COURSE---Tiny_Custom_CPU/RTL_Tiny_CPU/Add_IP.v" \
+"../../../bd/design_HDH/ip/design_HDH_Add_IP_HDH_0_0/sim/design_HDH_Add_IP_HDH_0_0.v" \
+"../../../bd/design_HDH/ip/design_HDH_clk_wiz_0_0/design_HDH_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_HDH/ip/design_HDH_clk_wiz_0_0/design_HDH_clk_wiz_0_0.v" \
+"../../../bd/design_HDH/sim/design_HDH.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

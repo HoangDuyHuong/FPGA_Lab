@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Nov 18 23:57:51 2025
+# Process ID: 3334513
+# Current directory: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -stack 10000 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/impl_1/vivado.jou
+# Running On: cad115, OS: Linux, CPU Frequency: 1199.642 MHz, CPU Physical cores: 14, Host memory: 269918 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

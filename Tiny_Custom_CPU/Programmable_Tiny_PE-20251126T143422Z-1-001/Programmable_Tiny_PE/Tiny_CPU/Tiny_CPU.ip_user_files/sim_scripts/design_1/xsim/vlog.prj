@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "../../../../Tiny_CPU.gen/sources_1/bd/design_1/ipshared/7698" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ipshared/c13e/src/ADD_SUB_Sharing.v" \
+"../../../bd/design_1/ipshared/c13e/src/ALU.v" \
+"../../../bd/design_1/ipshared/c13e/src/Controller.v" \
+"../../../bd/design_1/ipshared/c13e/src/Core.v" \
+"../../../bd/design_1/ipshared/c13e/src/Input_Memory.v" \
+"../../../bd/design_1/ipshared/c13e/src/Instruction_Memory.v" \
+"../../../bd/design_1/ipshared/c13e/src/receiver.v" \
+"../../../bd/design_1/ipshared/c13e/src/transmitter.v" \
+"../../../bd/design_1/ipshared/c13e/src/Add_IP.v" \
+"../../../bd/design_1/ip/design_1_Tiny_CPU_IP_0_0/sim/design_1_Tiny_CPU_IP_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

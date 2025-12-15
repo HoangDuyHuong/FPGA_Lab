@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_HDH/ip/design_HDH_rst_clk_wiz_0_25M_0/sim/design_HDH_rst_clk_wiz_0_25M_0.vhd" \
+
+nosort

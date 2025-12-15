@@ -1,0 +1,513 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -stack 10000 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/hoailuan/.Xilinx/Vivado/Vivado_init.tcl'
+source design_1_wrapper.tcl -notrace
+WARNING: [Board 49-91] Board repository path '/home/hoailuan/Research/2023/FPGA/TySOM-3A-ZU19EG/Vivado-board_files/2020.2/TySOM-3A-ZU19EG/1.1' does not exist, it will not be used to search board files.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4190.605 ; gain = 107.773 ; free physical = 52765 ; free virtual = 235502
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/utils_1/imports/synth_1/Add_IP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.srcs/utils_1/imports/synth_1/Add_IP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2024.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3333629
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'first_send_1_w', assumed default net type 'wire' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:70]
+INFO: [Synth 8-11241] undeclared symbol 'MLSB_SEL_Tx_Byte_out_w', assumed default net type 'wire' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:62]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 5588.762 ; gain = 333.457 ; free physical = 51329 ; free virtual = 234066
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2661.049; parent = 2485.238; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6742.254; parent = 5588.766; children = 1153.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_Tiny_CPU_IP_0_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_Tiny_CPU_IP_0_0/synth/design_1_Tiny_CPU_IP_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Add_IP' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Add_IP.v:10]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/receiver.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/receiver.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Core' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:10]
+INFO: [Synth 8-226] default block is never used [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Controller.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Instruction_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Instruction_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Input_Memory' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Input_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Input_Memory' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Input_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ADD_SUB_Sharing' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ADD_SUB_Sharing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ADD_SUB_Sharing' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ADD_SUB_Sharing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Core.v:10]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/transmitter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/transmitter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'Add_IP' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/c13e/src/Add_IP.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Tiny_CPU_IP_0_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_Tiny_CPU_IP_0_0/synth/design_1_Tiny_CPU_IP_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71342]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71342]
+INFO: [Synth 8-6157] synthesizing module 'MMCME4_ADV' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:80245]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 44.375000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 3.333000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 44.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 12 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME4_ADV' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:80245]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:68]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_25M_0' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:132132]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_25M_0' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/synth/design_1_rst_clk_wiz_0_25M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_0_25M_0' is unconnected for instance 'rst_clk_wiz_0_25M' [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_25M' of module 'design_1_rst_clk_wiz_0_25M_0' has 10 connections declared, but only 6 given [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5657.730 ; gain = 402.426 ; free physical = 51453 ; free virtual = 234191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2661.049; parent = 2485.238; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6811.223; parent = 5657.734; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 5675.543 ; gain = 420.238 ; free physical = 51447 ; free virtual = 234186
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2661.049; parent = 2485.238; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6829.035; parent = 5675.547; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 5675.543 ; gain = 420.238 ; free physical = 51447 ; free virtual = 234185
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2661.049; parent = 2485.238; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6829.035; parent = 5675.547; children = 1153.488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5681.480 ; gain = 0.000 ; free physical = 51452 ; free virtual = 234190
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_25M_0/design_1_rst_clk_wiz_0_25M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_25M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Fixed_Point_Adder/Simulation/Simulation.srcs/constrs_1/new/ct.xdc]
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Fixed_Point_Adder/Simulation/Simulation.srcs/constrs_1/new/ct.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Fixed_Point_Adder/Simulation/Simulation.srcs/constrs_1/new/ct.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6562.512 ; gain = 0.000 ; free physical = 51431 ; free virtual = 234169
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  FDR => FDRE: 12 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6562.512 ; gain = 0.000 ; free physical = 51431 ; free virtual = 234169
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 51513 ; free virtual = 234251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2673.055; parent = 2497.556; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 51512 ; free virtual = 234251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2673.055; parent = 2497.556; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0/inst. (constraint file  /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/dont_touch.xdc, line 19).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_25M/U0. (constraint file  /home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/dont_touch.xdc, line 27).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_25M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Tiny_CPU_IP_0. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for user_si570_sysclk_clk_n. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for user_si570_sysclk_clk_p. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 51512 ; free virtual = 234251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2673.055; parent = 2497.556; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_r_reg' in module 'Controller'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_r_reg' in module 'transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0010 |                               00
+                    LOAD |                             1000 |                               01
+                     EXE |                             0100 |                               10
+                    SEND |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_r_reg' using encoding 'one-hot' in module 'Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_r_reg' using encoding 'sequential' in module 'transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 51530 ; free virtual = 234269
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2673.055; parent = 2497.556; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 4     
+	   6 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/core/alu/MUL_raw_w, operation Mode is: A*B.
+DSP Report: operator inst/core/alu/MUL_raw_w is absorbed into DSP inst/core/alu/MUL_raw_w.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 51524 ; free virtual = 234268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2673.055; parent = 2497.556; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50969 ; free virtual = 233713
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3225.836; parent = 3050.522; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50942 ; free virtual = 233685
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50938 ; free virtual = 233682
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50937 ; free virtual = 233680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50937 ; free virtual = 233680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50933 ; free virtual = 233677
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50918 ; free virtual = 233661
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50909 ; free virtual = 233653
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50910 ; free virtual = 233654
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |     5|
+|3     |DSP_ALU         |     1|
+|4     |DSP_A_B_DATA    |     1|
+|5     |DSP_C_DATA      |     1|
+|6     |DSP_MULTIPLIER  |     1|
+|7     |DSP_M_DATA      |     1|
+|8     |DSP_OUTPUT      |     1|
+|9     |DSP_PREADD      |     1|
+|10    |DSP_PREADD_DATA |     1|
+|11    |LUT1            |     8|
+|12    |LUT2            |    19|
+|13    |LUT3            |    36|
+|14    |LUT4            |    41|
+|15    |LUT5            |    66|
+|16    |LUT6            |    29|
+|17    |MMCME4_ADV      |     1|
+|18    |SRL16           |     1|
+|19    |FDCE            |    66|
+|20    |FDPE            |     1|
+|21    |FDR             |     4|
+|22    |FDRE            |    67|
+|23    |FDSE            |     3|
+|24    |IBUF            |     2|
+|25    |IBUFDS          |     1|
+|26    |OBUF            |     9|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50910 ; free virtual = 233654
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3232.359; parent = 3057.046; children = 175.811
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7716.004; parent = 6562.516; children = 1153.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 6562.512 ; gain = 420.238 ; free physical = 50943 ; free virtual = 233687
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 6562.512 ; gain = 1307.207 ; free physical = 50951 ; free virtual = 233695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6562.512 ; gain = 0.000 ; free physical = 50968 ; free virtual = 233711
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance design_1_i/clk_wiz_0/inst/mmcme4_adv_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6941.828 ; gain = 0.000 ; free physical = 51018 ; free virtual = 233762
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  FDR => FDRE: 4 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: fcb399d1
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 6941.828 ; gain = 2701.441 ; free physical = 51206 ; free virtual = 233949
+INFO: [Common 17-1381] The checkpoint '/home/hoailuan/AISeQ/Khoa_Vi_Mach_Can_Ban/Programmable_Tiny_PE/Tiny_CPU/Tiny_CPU.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 18 23:57:46 2025...
